@@ -11,4 +11,5 @@ class CheckDP:
             print("Data berhasil di hapus")
             return df
         else:
-            return "Data Tidak Memiliki Duplikat"
+            print("Data bersih")
+            return data
