@@ -8,8 +8,8 @@ class CheckDP:
         df = data.duplicated().sum()
         if df > 0:
             df = data.drop_duplicates()
-            print("Data berhasil di hapus")
+            print("Data Duplikat berhasil di hapus")
             return df
         else:
-            print("Data bersih")
+            print("Tidak Ada Duplikat Data")
             return data
