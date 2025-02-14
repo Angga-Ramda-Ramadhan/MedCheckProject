@@ -8,14 +8,19 @@ class Exploratory:
     def __init__(self):
         self.visual = VisualCat()
 
-    def visualcount(self, data, kolomx):
-        explor = self.visual.visualcat(data, kolomx)
+    def visualcount(self, data, jk, jb):
+        explor = self.visual.visualcat(data, jk, jb)
         return explor
     
-    def visualcatplot(self, data, kolomx):
-        explor = self.visual.func_visual_catplot(data, kolomx)
+    def visualcatplot(self, data, jk, jb):
+        explor = self.visual.func_visual_catplot(data, jk, jb)
         return explor
     
-    def visualcatplotdouble(self, data, kolomx, kolomy):
-        explor = self.visual.func_visual_catplot_double(data, kolomx, kolomy)
+    def visualcatplotdouble(self, data, jk, jb, target):
+        explor = self.visual.func_visual_countplot_double(data, jk, jb, target)
+        return explor
+    
+    
+    def visualnumvar(self, data_num, jk, jb):
+        explor = self.visual.func_visual_num_dist(data_num, jk, jb)
         return explor
